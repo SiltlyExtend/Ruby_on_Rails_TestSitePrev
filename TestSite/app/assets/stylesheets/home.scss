@@ -38,7 +38,7 @@ form input[type="submit"] {
 /* 共通レイアウト ================================ */
 body {
   color: #2d3133;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #b0c4de;
   margin: 0;
   min-height: 1vh;
 }
@@ -60,49 +60,21 @@ body {
   clear: both;
 }
 
-.fadein {
-	animation: fadeIn 1s ease 1s 1 normal;
-
-}
-
-@keyframes fadeIn {
-	0% {opacity: 0}
-	100% {opacity: 1}
-
-}
-
-.fadeout {
-	animation: fadeOut 1s ease 1s 1 forwards;
-
-}
-
-@keyframes fadeOut {
-	0% {opacity: 1}
-	100% {opacity: 0}
-
-}
 /* ヘッダー ================================ */
 header {
+  background-color: #191970;
   height: 64px;
   position: absolute;
-	position: fixed;
   z-index: 1;
   width: 100%;
-	background-color: rgba(0, 0, 0, 0.5);
 }
 
 .header-logo {
   float: left;
-  padding: 0 20px;
+  padding-left: 20px;
   color: white;
   font-size: 22px;
   line-height: 64px;
-	transition: all 0.5s;
-}
-
-.header-logo:hover {
-	background-color: red;
-
 }
 
 .header-logo a{
@@ -120,12 +92,7 @@ header {
   line-height: 64px;
   font-size: 13px;
   color: white;
-  padding: 0 15px;
-	transition: all 0.5s;
-}
-
-.header-menus li:hover {
-	background-color: red;
+  padding-left: 15px;
 }
 
 .header-menus a {
@@ -161,7 +128,7 @@ header {
   background-repeat: no-repeat;
   background-position: center 50%;
   background-size: cover;
-  background-image: url("/image/top.jpg");
+  background-image: url("/top_about.jpg");
 }
 
 .top-message {
@@ -178,22 +145,6 @@ header {
 
 .top-main p {
   font-size: 24px;
-}
-
-.top-main a {
-	display: inline-block;
-	color: white;
-	margin: 40px 0;
-	padding: 5px 30px;
-	background-color: blue;
-	font-size: 20px;
-	border-radius: 40px;
-	opacity: 0.3;
-	transition: all 0.2s;
-}
-
-.top-main a:hover {
-	opacity: 1.0;
 }
 
 /* about ================================ */
@@ -217,10 +168,6 @@ header {
   width: 84%;
 }
 
-.about-color {
- color: red;
-
-}
 /* フォーム================================ */
 .form {
   max-width: 600px;
